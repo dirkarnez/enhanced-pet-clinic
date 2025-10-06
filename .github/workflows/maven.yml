@@ -47,6 +47,6 @@ jobs:
     - name: Release prebuilt
       uses: ncipollo/release-action@v1
       with:
-        artifacts: "${{ github.event.repository.name }}-${{ github.ref_name }}-jdk-8.zip"
+        artifacts: "target/${{ github.event.repository.name }}-${{ github.ref_name }}-jdk-8.zip"
         allowUpdates: true
         token: ${{ secrets.GITHUB_TOKEN }}
